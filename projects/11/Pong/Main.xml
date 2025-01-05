@@ -1,0 +1,83 @@
+<class>
+  <keyword> class </keyword>
+  <identifier> Main </identifier>
+  <identifier> not defined </identifier>
+  <symbol> { </symbol>
+  <keyword> function </keyword>
+  <keyword> void </keyword>
+  <identifier> main </identifier>
+  <identifier> not defined </identifier>
+  <symbol> ( </symbol>
+  <symbol> ) </symbol>
+  <subroutineBody>
+    <symbol> { </symbol>
+    <statements>
+      <doStatement>
+        <keyword> do </keyword>
+        <identifier> PongGame </identifier>
+        <identifier> not defined </identifier>
+        <symbol> . </symbol>
+        <identifier> newInstance </identifier>
+        <identifier> not defined </identifier>
+        <symbol> ( </symbol>
+        <expressionList>
+        </expressionList>
+        <symbol> ) </symbol>
+        <symbol> ; </symbol>
+      </doStatement>
+      <letStatement>
+        <keyword> let </keyword>
+        <identifier> game </identifier>
+        <identifier> index: 0, kind: local, type: PongGame </identifier>
+        <symbol> = </symbol>
+        <expression>
+          <term>
+            <identifier> PongGame </identifier>
+            <identifier> not defined </identifier>
+            <symbol> . </symbol>
+            <identifier> getInstance </identifier>
+            <identifier> not defined </identifier>
+            <symbol> ( </symbol>
+            <expressionList>
+            </expressionList>
+            <symbol> ) </symbol>
+          </term>
+        </expression>
+        <symbol> ; </symbol>
+      </letStatement>
+      <doStatement>
+        <keyword> do </keyword>
+        <identifier> game </identifier>
+        <identifier> index: 0, kind: local, type: PongGame </identifier>
+        <symbol> . </symbol>
+        <identifier> run </identifier>
+        <identifier> not defined </identifier>
+        <symbol> ( </symbol>
+        <expressionList>
+        </expressionList>
+        <symbol> ) </symbol>
+        <symbol> ; </symbol>
+      </doStatement>
+      <doStatement>
+        <keyword> do </keyword>
+        <identifier> game </identifier>
+        <identifier> index: 0, kind: local, type: PongGame </identifier>
+        <symbol> . </symbol>
+        <identifier> dispose </identifier>
+        <identifier> not defined </identifier>
+        <symbol> ( </symbol>
+        <expressionList>
+        </expressionList>
+        <symbol> ) </symbol>
+        <symbol> ; </symbol>
+      </doStatement>
+      <returnStatement>
+        <keyword> return </keyword>
+        <symbol> ; </symbol>
+      </returnStatement>
+    </statements>
+    <symbol> } </symbol>
+  </subroutineBody>
+</subroutineDec>
+<symbol> } </symbol>
+</class>

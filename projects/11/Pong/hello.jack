@@ -1,0 +1,9 @@
+class hello {
+
+    /** Initializes a Pong game and starts running it. */
+    function int helloe() {
+        var String a;
+        let a = "hello";
+        return 0;
+    }
+}

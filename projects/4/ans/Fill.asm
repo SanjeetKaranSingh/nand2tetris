@@ -1,0 +1,45 @@
+(LOOP)
+    @i
+    M=0
+    @SCREEN
+    D=A
+    @PX_PTR
+    M=D
+
+    @KBD
+    D=M
+    @SCREEN_BLACK
+    D;JEQ
+
+(SCREEN_WHITE)
+    @i
+    D=M
+    @8192
+    D=A-D
+    @LOOP
+    D;JLE
+    @i
+    D=M
+    @PX_PTR
+    A=D+M
+    M=-1
+    @i
+    M=M+1
+    @SCREEN_WHITE
+    0;JMP
+(SCREEN_BLACK)
+    @i
+    D=M
+    @8192
+    D=A-D
+    @LOOP
+    D;JLE
+    @i
+    D=M
+    @PX_PTR
+    A=D+M
+    M=0
+    @i
+    M=M+1
+    @SCREEN_BLACK
+    0;JMP

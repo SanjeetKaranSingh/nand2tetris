@@ -1,0 +1,51 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/8/ProgramFlow/BasicLoop/BasicLoop.vm
+
+// Computes the sum 1 + 2 + ... + n and pushes the result onto
+// the stack. The value n is given in argument[0], which must be
+// initialized by the caller of this code.
+
+push constant 0
+arg1=constant
+arg2=0
+pop local 0         // sum = 0
+arg1=local
+arg2=0
+label LOOP
+arg1=LOOP
+arg2=None
+push argument 0
+arg1=argument
+arg2=0
+push local 0
+arg1=local
+arg2=0
+add
+arg1=add
+arg2=None
+pop local 0	        // sum = sum + n
+arg1=local
+arg2=0
+push argument 0
+arg1=argument
+arg2=0
+push constant 1
+arg1=constant
+arg2=1
+sub
+arg1=sub
+arg2=None
+pop argument 0      // n--
+arg1=argument
+arg2=0
+push argument 0
+arg1=argument
+arg2=0
+if-goto LOOP        // if n > 0, goto LOOP
+arg1=LOOP
+arg2=None
+push local 0        // else, pushes sum to the stack's top
+arg1=local
+arg2=0

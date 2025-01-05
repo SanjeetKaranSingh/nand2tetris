@@ -1,0 +1,894 @@
+<class>
+  <keyword> class </keyword>
+  <identifier> Bat </identifier>
+  <identifier> not defined </identifier>
+  <symbol> { </symbol>
+  <keyword> constructor </keyword>
+  <identifier> Bat </identifier>
+  <identifier> not defined </identifier>
+  <identifier> new </identifier>
+  <identifier> not defined </identifier>
+  <symbol> ( </symbol>
+  <symbol> ) </symbol>
+  <subroutineBody>
+    <symbol> { </symbol>
+    <statements>
+      <letStatement>
+        <keyword> let </keyword>
+        <identifier> x </identifier>
+        <identifier> index: 0, kind: STATIC, type: int </identifier>
+        <symbol> = </symbol>
+        <expression>
+          <term>
+            <identifier> Ax </identifier>
+            <identifier> index: 1, kind: ARG, type: int </identifier>
+          </term>
+        </expression>
+        <symbol> ; </symbol>
+      </letStatement>
+      <letStatement>
+        <keyword> let </keyword>
+        <identifier> y </identifier>
+        <identifier> index: 1, kind: STATIC, type: int </identifier>
+        <symbol> = </symbol>
+        <expression>
+          <term>
+            <identifier> Ay </identifier>
+            <identifier> index: 2, kind: ARG, type: int </identifier>
+          </term>
+        </expression>
+        <symbol> ; </symbol>
+      </letStatement>
+      <letStatement>
+        <keyword> let </keyword>
+        <identifier> width </identifier>
+        <identifier> index: 2, kind: STATIC, type: int </identifier>
+        <symbol> = </symbol>
+        <expression>
+          <term>
+            <identifier> Awidth </identifier>
+            <identifier> index: 3, kind: ARG, type: int </identifier>
+          </term>
+        </expression>
+        <symbol> ; </symbol>
+      </letStatement>
+      <letStatement>
+        <keyword> let </keyword>
+        <identifier> height </identifier>
+        <identifier> index: 3, kind: STATIC, type: int </identifier>
+        <symbol> = </symbol>
+        <expression>
+          <term>
+            <identifier> Aheight </identifier>
+            <identifier> index: 4, kind: ARG, type: int </identifier>
+          </term>
+        </expression>
+        <symbol> ; </symbol>
+      </letStatement>
+      <letStatement>
+        <keyword> let </keyword>
+        <identifier> direction </identifier>
+        <identifier> index: 4, kind: STATIC, type: int </identifier>
+        <symbol> = </symbol>
+        <expression>
+          <term>
+            <integerConstant> 2 </integerConstant>
+          </term>
+        </expression>
+        <symbol> ; </symbol>
+      </letStatement>
+      <doStatement>
+        <keyword> do </keyword>
+        <identifier> show </identifier>
+        <identifier> not defined </identifier>
+        <symbol> ( </symbol>
+        <expressionList>
+        </expressionList>
+        <symbol> ) </symbol>
+        <symbol> ; </symbol>
+      </doStatement>
+      <returnStatement>
+        <keyword> return </keyword>
+        <expression>
+          <term>
+            <keyword> this </keyword>
+          </term>
+        </expression>
+        <symbol> ; </symbol>
+      </returnStatement>
+    </statements>
+    <symbol> } </symbol>
+  </subroutineBody>
+</subroutineDec>
+<keyword> method </keyword>
+<keyword> void </keyword>
+<identifier> dispose </identifier>
+<identifier> not defined </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<subroutineBody>
+  <symbol> { </symbol>
+  <statements>
+    <doStatement>
+      <keyword> do </keyword>
+      <identifier> Memory </identifier>
+      <identifier> not defined </identifier>
+      <symbol> . </symbol>
+      <identifier> deAlloc </identifier>
+      <identifier> not defined </identifier>
+      <symbol> ( </symbol>
+      <expressionList>
+        <expression>
+          <term>
+            <keyword> this </keyword>
+          </term>
+        </expression>
+      </expressionList>
+      <symbol> ) </symbol>
+      <symbol> ; </symbol>
+    </doStatement>
+    <returnStatement>
+      <keyword> return </keyword>
+      <symbol> ; </symbol>
+    </returnStatement>
+  </statements>
+  <symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<keyword> method </keyword>
+<keyword> void </keyword>
+<identifier> show </identifier>
+<identifier> not defined </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<statements>
+  <doStatement>
+    <keyword> do </keyword>
+    <identifier> Screen </identifier>
+    <identifier> not defined </identifier>
+    <symbol> . </symbol>
+    <identifier> setColor </identifier>
+    <identifier> not defined </identifier>
+    <symbol> ( </symbol>
+    <expressionList>
+      <expression>
+        <term>
+          <keyword> true </keyword>
+        </term>
+      </expression>
+    </expressionList>
+    <symbol> ) </symbol>
+    <symbol> ; </symbol>
+  </doStatement>
+  <doStatement>
+    <keyword> do </keyword>
+    <identifier> draw </identifier>
+    <identifier> not defined </identifier>
+    <symbol> ( </symbol>
+    <expressionList>
+    </expressionList>
+    <symbol> ) </symbol>
+    <symbol> ; </symbol>
+  </doStatement>
+  <returnStatement>
+    <keyword> return </keyword>
+    <symbol> ; </symbol>
+  </returnStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<keyword> method </keyword>
+<keyword> void </keyword>
+<identifier> hide </identifier>
+<identifier> not defined </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<statements>
+<doStatement>
+  <keyword> do </keyword>
+  <identifier> Screen </identifier>
+  <identifier> not defined </identifier>
+  <symbol> . </symbol>
+  <identifier> setColor </identifier>
+  <identifier> not defined </identifier>
+  <symbol> ( </symbol>
+  <expressionList>
+    <expression>
+      <term>
+        <keyword> false </keyword>
+      </term>
+    </expression>
+  </expressionList>
+  <symbol> ) </symbol>
+  <symbol> ; </symbol>
+</doStatement>
+<doStatement>
+  <keyword> do </keyword>
+  <identifier> draw </identifier>
+  <identifier> not defined </identifier>
+  <symbol> ( </symbol>
+  <expressionList>
+  </expressionList>
+  <symbol> ) </symbol>
+  <symbol> ; </symbol>
+</doStatement>
+<returnStatement>
+  <keyword> return </keyword>
+  <symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<keyword> method </keyword>
+<keyword> void </keyword>
+<identifier> draw </identifier>
+<identifier> not defined </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<statements>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+<identifier> not defined </identifier>
+<symbol> . </symbol>
+<identifier> drawRectangle </identifier>
+<identifier> not defined </identifier>
+<symbol> ( </symbol>
+<expressionList>
+  <expression>
+    <term>
+      <identifier> x </identifier>
+      <identifier> index: 0, kind: STATIC, type: int </identifier>
+    </term>
+  </expression>
+  <symbol> , </symbol>
+  <expression>
+    <term>
+      <identifier> y </identifier>
+      <identifier> index: 1, kind: STATIC, type: int </identifier>
+    </term>
+  </expression>
+  <symbol> , </symbol>
+  <expression>
+    <term>
+      <identifier> x </identifier>
+      <identifier> index: 0, kind: STATIC, type: int </identifier>
+    </term>
+    <symbol> + </symbol>
+    <term>
+      <identifier> width </identifier>
+      <identifier> index: 2, kind: STATIC, type: int </identifier>
+    </term>
+  </expression>
+  <symbol> , </symbol>
+  <expression>
+    <term>
+      <identifier> y </identifier>
+      <identifier> index: 1, kind: STATIC, type: int </identifier>
+    </term>
+    <symbol> + </symbol>
+    <term>
+      <identifier> height </identifier>
+      <identifier> index: 3, kind: STATIC, type: int </identifier>
+    </term>
+  </expression>
+</expressionList>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<returnStatement>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<keyword> method </keyword>
+<keyword> void </keyword>
+<identifier> setDirection </identifier>
+<identifier> not defined </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> direction </identifier>
+<identifier> index: 4, kind: STATIC, type: int </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+  <identifier> Adirection </identifier>
+  <identifier> index: 1, kind: ARG, type: int </identifier>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<returnStatement>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<keyword> method </keyword>
+<keyword> int </keyword>
+<identifier> getLeft </identifier>
+<identifier> not defined </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<statements>
+<returnStatement>
+<keyword> return </keyword>
+<expression>
+<term>
+<identifier> x </identifier>
+<identifier> index: 0, kind: STATIC, type: int </identifier>
+</term>
+</expression>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<keyword> method </keyword>
+<keyword> int </keyword>
+<identifier> getRight </identifier>
+<identifier> not defined </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<statements>
+<returnStatement>
+<keyword> return </keyword>
+<expression>
+<term>
+<identifier> x </identifier>
+<identifier> index: 0, kind: STATIC, type: int </identifier>
+</term>
+<symbol> + </symbol>
+<term>
+<identifier> width </identifier>
+<identifier> index: 2, kind: STATIC, type: int </identifier>
+</term>
+</expression>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<keyword> method </keyword>
+<keyword> void </keyword>
+<identifier> setWidth </identifier>
+<identifier> not defined </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<statements>
+<doStatement>
+<keyword> do </keyword>
+<identifier> hide </identifier>
+<identifier> not defined </identifier>
+<symbol> ( </symbol>
+<expressionList>
+</expressionList>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> width </identifier>
+<identifier> index: 2, kind: STATIC, type: int </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> Awidth </identifier>
+<identifier> index: 1, kind: ARG, type: int </identifier>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> show </identifier>
+<identifier> not defined </identifier>
+<symbol> ( </symbol>
+<expressionList>
+</expressionList>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<returnStatement>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<keyword> method </keyword>
+<keyword> void </keyword>
+<identifier> move </identifier>
+<identifier> not defined </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<statements>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> direction </identifier>
+<identifier> index: 4, kind: STATIC, type: int </identifier>
+</term>
+<symbol> = </symbol>
+<term>
+<integerConstant> 1 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> x </identifier>
+<identifier> index: 0, kind: STATIC, type: int </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> x </identifier>
+<identifier> index: 0, kind: STATIC, type: int </identifier>
+</term>
+<symbol> - </symbol>
+<term>
+<integerConstant> 4 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> x </identifier>
+<identifier> index: 0, kind: STATIC, type: int </identifier>
+</term>
+<symbol> &lt; </symbol>
+<term>
+<integerConstant> 0 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> x </identifier>
+<identifier> index: 0, kind: STATIC, type: int </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+  <integerConstant> 0 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+</ifStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+<identifier> not defined </identifier>
+<symbol> . </symbol>
+<identifier> setColor </identifier>
+<identifier> not defined </identifier>
+<symbol> ( </symbol>
+<expressionList>
+<expression>
+<term>
+<keyword> false </keyword>
+</term>
+</expression>
+</expressionList>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+<identifier> not defined </identifier>
+<symbol> . </symbol>
+<identifier> drawRectangle </identifier>
+<identifier> not defined </identifier>
+<symbol> ( </symbol>
+<expressionList>
+<expression>
+<term>
+<symbol> ( </symbol>
+<expression>
+  <term>
+    <identifier> x </identifier>
+    <identifier> index: 0, kind: STATIC, type: int </identifier>
+  </term>
+  <symbol> + </symbol>
+  <term>
+    <identifier> width </identifier>
+    <identifier> index: 2, kind: STATIC, type: int </identifier>
+  </term>
+</expression>
+<symbol> ) </symbol>
+</term>
+<symbol> + </symbol>
+<term>
+<integerConstant> 1 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<identifier> y </identifier>
+<identifier> index: 1, kind: STATIC, type: int </identifier>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<symbol> ( </symbol>
+<expression>
+  <term>
+    <identifier> x </identifier>
+    <identifier> index: 0, kind: STATIC, type: int </identifier>
+  </term>
+  <symbol> + </symbol>
+  <term>
+    <identifier> width </identifier>
+    <identifier> index: 2, kind: STATIC, type: int </identifier>
+  </term>
+</expression>
+<symbol> ) </symbol>
+</term>
+<symbol> + </symbol>
+<term>
+<integerConstant> 4 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<identifier> y </identifier>
+<identifier> index: 1, kind: STATIC, type: int </identifier>
+</term>
+<symbol> + </symbol>
+<term>
+<identifier> height </identifier>
+<identifier> index: 3, kind: STATIC, type: int </identifier>
+</term>
+</expression>
+</expressionList>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+<identifier> not defined </identifier>
+<symbol> . </symbol>
+<identifier> setColor </identifier>
+<identifier> not defined </identifier>
+<symbol> ( </symbol>
+<expressionList>
+<expression>
+<term>
+<keyword> true </keyword>
+</term>
+</expression>
+</expressionList>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+<identifier> not defined </identifier>
+<symbol> . </symbol>
+<identifier> drawRectangle </identifier>
+<identifier> not defined </identifier>
+<symbol> ( </symbol>
+<expressionList>
+<expression>
+<term>
+<identifier> x </identifier>
+<identifier> index: 0, kind: STATIC, type: int </identifier>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<identifier> y </identifier>
+<identifier> index: 1, kind: STATIC, type: int </identifier>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<identifier> x </identifier>
+<identifier> index: 0, kind: STATIC, type: int </identifier>
+</term>
+<symbol> + </symbol>
+<term>
+<integerConstant> 3 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<identifier> y </identifier>
+<identifier> index: 1, kind: STATIC, type: int </identifier>
+</term>
+<symbol> + </symbol>
+<term>
+<identifier> height </identifier>
+<identifier> index: 3, kind: STATIC, type: int </identifier>
+</term>
+</expression>
+</expressionList>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+</statements>
+<symbol> } </symbol>
+<keyword> else </keyword>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> x </identifier>
+<identifier> index: 0, kind: STATIC, type: int </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> x </identifier>
+<identifier> index: 0, kind: STATIC, type: int </identifier>
+</term>
+<symbol> + </symbol>
+<term>
+<integerConstant> 4 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+  <identifier> x </identifier>
+  <identifier> index: 0, kind: STATIC, type: int </identifier>
+</term>
+<symbol> + </symbol>
+<term>
+  <identifier> width </identifier>
+  <identifier> index: 2, kind: STATIC, type: int </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+<symbol> &gt; </symbol>
+<term>
+<integerConstant> 511 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> x </identifier>
+<identifier> index: 0, kind: STATIC, type: int </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+  <integerConstant> 511 </integerConstant>
+</term>
+<symbol> - </symbol>
+<term>
+  <identifier> width </identifier>
+  <identifier> index: 2, kind: STATIC, type: int </identifier>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+</ifStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+<identifier> not defined </identifier>
+<symbol> . </symbol>
+<identifier> setColor </identifier>
+<identifier> not defined </identifier>
+<symbol> ( </symbol>
+<expressionList>
+<expression>
+<term>
+<keyword> false </keyword>
+</term>
+</expression>
+</expressionList>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+<identifier> not defined </identifier>
+<symbol> . </symbol>
+<identifier> drawRectangle </identifier>
+<identifier> not defined </identifier>
+<symbol> ( </symbol>
+<expressionList>
+<expression>
+<term>
+<identifier> x </identifier>
+<identifier> index: 0, kind: STATIC, type: int </identifier>
+</term>
+<symbol> - </symbol>
+<term>
+<integerConstant> 4 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<identifier> y </identifier>
+<identifier> index: 1, kind: STATIC, type: int </identifier>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<identifier> x </identifier>
+<identifier> index: 0, kind: STATIC, type: int </identifier>
+</term>
+<symbol> - </symbol>
+<term>
+<integerConstant> 1 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<identifier> y </identifier>
+<identifier> index: 1, kind: STATIC, type: int </identifier>
+</term>
+<symbol> + </symbol>
+<term>
+<identifier> height </identifier>
+<identifier> index: 3, kind: STATIC, type: int </identifier>
+</term>
+</expression>
+</expressionList>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+<identifier> not defined </identifier>
+<symbol> . </symbol>
+<identifier> setColor </identifier>
+<identifier> not defined </identifier>
+<symbol> ( </symbol>
+<expressionList>
+<expression>
+<term>
+<keyword> true </keyword>
+</term>
+</expression>
+</expressionList>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+<identifier> not defined </identifier>
+<symbol> . </symbol>
+<identifier> drawRectangle </identifier>
+<identifier> not defined </identifier>
+<symbol> ( </symbol>
+<expressionList>
+<expression>
+<term>
+<symbol> ( </symbol>
+<expression>
+  <term>
+    <identifier> x </identifier>
+    <identifier> index: 0, kind: STATIC, type: int </identifier>
+  </term>
+  <symbol> + </symbol>
+  <term>
+    <identifier> width </identifier>
+    <identifier> index: 2, kind: STATIC, type: int </identifier>
+  </term>
+</expression>
+<symbol> ) </symbol>
+</term>
+<symbol> - </symbol>
+<term>
+<integerConstant> 3 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<identifier> y </identifier>
+<identifier> index: 1, kind: STATIC, type: int </identifier>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<identifier> x </identifier>
+<identifier> index: 0, kind: STATIC, type: int </identifier>
+</term>
+<symbol> + </symbol>
+<term>
+<identifier> width </identifier>
+<identifier> index: 2, kind: STATIC, type: int </identifier>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<identifier> y </identifier>
+<identifier> index: 1, kind: STATIC, type: int </identifier>
+</term>
+<symbol> + </symbol>
+<term>
+<identifier> height </identifier>
+<identifier> index: 3, kind: STATIC, type: int </identifier>
+</term>
+</expression>
+</expressionList>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+</statements>
+<symbol> } </symbol>
+</ifStatement>
+<returnStatement>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<symbol> } </symbol>
+</class>

@@ -1,0 +1,9 @@
+
+class Maine {
+
+    function int main() {
+        var Array a, b;
+       let b[3] = a[3];
+       return 3;
+    }
+}
